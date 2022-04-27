@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Afazeres</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <main class="container">
+        <div class="add-bar">
+            <i class="fas fa-clipboard-list mg-10 fs-large"></i>
+            <input type="text" id="new-task" placeholder="Adicionar Tarefas...">
+            <ion-icon id="add-button" name="add-circle-outline" class="mg-10 fs-large"></ion-icon>
+        </div>
+        <div class="menu-bar">
+            <div id="check-all-button">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <p id = "completeAll" class="fs-med" >Clique para marcar todas como Terminadas</p>
+            </div>
+            <p id = "clearComplete" class="fs-med">Limpar as tarefas Terminadas</p>
+        </div>
+        <hr>
+        <div id = "show-all" class="tasks-container"></div>
+        <hr>
+        <div class="footer">
+            <div class="task-count">
+                <p id="task-left-count" class="fs-med bold"></p>&nbsp
+                <p class="fs-med">Tarefas na Lista</p>
+            </div>
+            <div class="filter">
+                <p id = 'showAll' class="filter-button">Todas</p>
+                <p id='showComplete' class="filter-button">Terminadas</p>
+                <p id='showInprogress' class="filter-button">Em Progresso</p>
+                <p id='showNotStarted' class="filter-button">Iniciar</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
